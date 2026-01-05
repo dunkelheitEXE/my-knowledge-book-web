@@ -19,10 +19,6 @@ This "Knowledge Book" is for share all things that I have been learning about pr
 
 The next are some ways that you can use to navigate through this book
 
-| By Subjects                                                                        | By Tags                                                                       | By File Name                  |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------- |
-| Each note has a property named "Subjects",  you could search a note via *Subjects* | Each note has its own number of tags related with the *Subjects* to see there | Search a note by its own name |
-
 
 ## Books
 
