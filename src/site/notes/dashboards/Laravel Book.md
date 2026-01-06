@@ -8,7 +8,7 @@
 ---
 # Content
 ---
-1. [[Learning/Code/Laravel/Notes/1-How to clone a Laravel repository\|1-How to clone a Laravel repository]]
+1. [[Learning/Code/Laravel/Notes/Chapter 2. How to clone a Laravel repository\|Chapter 2. How to clone a Laravel repository]]
 2. [[Learning/Code/Laravel/Notes/2-Introduction\|2-Introduction]]
 3. [[Learning/Code/Laravel/Notes/3-HTTP Requests\|3-HTTP Requests]]
 4. [[Learning/Code/Laravel/Notes/4-Models & Controllers\|4-Models & Controllers]]
