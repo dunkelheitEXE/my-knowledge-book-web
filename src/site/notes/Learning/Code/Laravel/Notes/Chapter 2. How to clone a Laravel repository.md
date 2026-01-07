@@ -13,12 +13,13 @@
 git clone <https://github.com/user/repositorio.git>
 ```
 
+>[!NOTE]
 >Insetad of `https://github.com/user/repositorio.git`, you have to put your [[repository\|repository]] link
 
 ### Go to the repository
 
 ```bash
-cd repo
+cd repository
 ```
 
 ---

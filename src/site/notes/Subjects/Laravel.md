@@ -2,9 +2,15 @@
 {"dg-publish":true,"permalink":"/subjects/laravel/"}
 ---
 
-| File                                                                                                                          | date             | file.tags                               |
-| ----------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------- |
-| [[Learning/Code/Laravel/Notes/Chapter 2. How to clone a Laravel repository\|Chapter 2. How to clone a Laravel repository]] | January 06, 2026 | <ul></ul>                               |
-| [[dashboards/Laravel Book\|Laravel Book]]                                                                                  | January 05, 2026 | <ul><li>#php</li><li>#Laravel</li></ul> |
+![Pasted image 20260106144355.png](/img/user/Pasted%20image%2020260106144355.png)
+
+| File                                                                                                                            | date             | Tags                                      |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------- |
+| [[Learning/Code/Laravel/Notes/Chapter 1. Introduction\|Chapter 1. Introduction]]                                             | January 06, 2026 | <ul></ul>                                 |
+| [[Learning/Code/Laravel/Notes/Chapter 2. How to clone a Laravel repository\|Chapter 2. How to clone a Laravel repository]]   | January 06, 2026 | <ul></ul>                                 |
+| [[Learning/Code/Laravel/Notes/Chapter 3. HTTP Requests in Laravel\|Chapter 3. HTTP Requests in Laravel]]                     | January 06, 2026 | <ul></ul>                                 |
+| [[Learning/Code/Laravel/Notes/Chapter 4. Models & controllers in Laravel 12\|Chapter 4. Models & controllers in Laravel 12]] | January 06, 2026 | <ul><li>#Laravel</li></ul>                |
+| [[Chapter 5. Views\|Chapter 5. Views]]                                                                                       | January 06, 2026 | <ul><li>#Laravel</li></ul>                |
+| [[Eloquent in Laravel 12 (ORM)\|Eloquent in Laravel 12 (ORM)]]                                                               | January 06, 2026 | <ul><li>#DataBases</li><li>#ORM</li></ul> |
 
 { .block-language-dataview}
