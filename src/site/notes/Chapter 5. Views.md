@@ -179,7 +179,37 @@ Route::get('/', RootController::class);
 
 There are some ways to do that, one is passing by an `array` this parameters, the second one is using the function `compact()` or methods like `with()`. Let's see what to do in each one.
 
+### Before to start
+
+Each parameter is passed by the path from a GET route, So, before passing to explain how to treat a parameter in the controller or the method from the route, we have to see how to get that parameter from the route. Let's see an example to understand.
+
+```php
+// first, we pass the "name" parameter through the path, then it will be passing through the method in the Controller...
+Route::get('/{name}', [RootController::class, 'show']);
+
+// Or in the method from the own route
+Route::get('/{name}', function ($name) {
+    return view('test', compact('name'));
+});
+```
+
+Here we can see that we passed the parameter using `compact()`, but now we have to understand the different ways to pass a parameter to a [[Blade\|blade view]].
+
 ### Using only view()
+
+To add parameters in a method, as into a Controller as using the function in `web.php`, we will define it in the same way that we do with a common method
+
+```php
+public function show($param) { // here we pass the parameters
+	return view...
+}
+
+Route::get('/{name}', function ($param) {
+	return view...
+});
+```
+
+Once we did that, we will be able to pass those parameters through the view using an [[Arrays in programming\|array]], as you can see in the sample below.
 
 ```php
 public function show($param) {
@@ -195,28 +225,35 @@ public function show($articles) {
 ### Using with()
 
 ```php
-public function show() {
-	return view('configuration')->with()
+public function show($param) {
+	return view('configuration')->with('articleName', $param);
+}
+
+public function show($hereIsAList) {
+	// Or if  you  want  to pass an array or a list
+	return view('configuration')->with('articleList', $hereIsAList);
+}
+
+// Also you can pass many parameters using multiple with's
+public function show($param) {
+	return view('configuration')->with('articleName', $param)
+		->with('author', "Joe");
 }
 ```
+
+### Using compact
+
+This is one of the most common ways to pass parameters through a view. `compact` only receive the parameter name in a `String` and the function knows there is a parameter with that name in your method, and it pass directly to the view.
 
 ```php
 public function home($param) {
-	return view('home.index', compact($param))
+	return view('home.index', compact('param'));
+	// This could be interpretated like:
+	// return view('home.index', ['param' => $param]);
 }
 ```
 
-Para mostrar estos parámetros, recordemos que en el archivo web debemos pasar los parámetros por la url:
-
-```php
-Route::get('usuarios/{user?}', [Controller::class, 'home']);
-```
-
-Y posteriormente mostrarlo en la vista. Por ejemplo: `Vista.blade.php`
-
-```php
-<h1>{{$param}}</h1
-```
+## Parameters in views (Using Post method)
 
 
 
