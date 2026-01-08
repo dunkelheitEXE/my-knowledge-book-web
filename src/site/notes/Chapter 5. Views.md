@@ -255,6 +255,112 @@ public function home($param) {
 
 ## Parameters in views (Using Post method)
 
+>[!INFO] Note
+>At this point, we only will work using controllers instead of using the own route function:
+>
+>```php
+>// We will no longer use this form ❌
+>Route::get('/', function() {
+>	//...
+>});
+>
+>// Now, we are going to use this ✅
+>Route::get('/', [RootController, 'create']);
+>```
 
+### Creating the controller
+
+Now we are going to work with `POST` methods to make this kind of HTTP requests. To achieve that, first we need to create the Controller in charge of show the view and send requests. For this example, I will named that controller as "*UserController*":
+
+```shell
+php artisan make:controller UserController
+```
+
+In the controller:
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class UserController extends Controller
+{
+    //
+    public function __invoke()
+    {
+        return view('form');
+    }
+
+    public function store(Request $request) {
+        $name = $request->name;
+        return "User registered $name";
+    }
+}
+```
+
+In `web.php` we are going to create 2 endpoints, one will be `GET` type, and the other will be `POST` type:
+
+```php
+<?php
+
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return "hello world";
+});
+
+Route::get('/create-account', UserController::class);
+Route::post('/add-account', [UserController::class, 'store']);
+```
+
+In the view `form`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Init Session</title>
+</head>
+<body>
+    <form action="/add-account" method="POST">
+        @csrf
+        <input type="text" name="name" id="name">
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
+```
+
+>[!INFO] Note
+>Here we can see a blade directive called `@csrf`, this directive creates a unique token in the form each time that page refresh to make secure data sent. This prevents security failures like to take another "rol" changing or adding fields in the form
+
+**Result of this code:**
+
+1. First we will see something like this:
+
+![Pasted image 20260108121833.png](/img/user/Pasted%20image%2020260108121833.png)
+
+2. We will put in the URL the path to send data through the form:
+
+>[!NOTE]
+>We can use `<a href=""></a>` going to the form route in a easier way, in this case see these HTML tags is not our goal, so we will omit that.
+
+![Pasted image 20260108122237.png](/img/user/Pasted%20image%2020260108122237.png)
+
+3. We can send data and see the result
+
+![Pasted image 20260108122355.png](/img/user/Pasted%20image%2020260108122355.png)
+
+![Pasted image 20260108122413.png](/img/user/Pasted%20image%2020260108122413.png)
+
+### Using Data bases (Creating our first CRUD)
+
+>[!DANGER] Coming Soon :D
 
 >[!QUOTE] **References**
