@@ -10,7 +10,7 @@
 | [[Learning/Code/Laravel/Notes/Chapter 2. How to clone a Laravel repository\|Chapter 2. How to clone a Laravel repository]]   | January 06, 2026 | <ul></ul>                                 |
 | [[Learning/Code/Laravel/Notes/Chapter 3. HTTP Requests in Laravel\|Chapter 3. HTTP Requests in Laravel]]                     | January 06, 2026 | <ul></ul>                                 |
 | [[Learning/Code/Laravel/Notes/Chapter 4. Models & controllers in Laravel 12\|Chapter 4. Models & controllers in Laravel 12]] | January 06, 2026 | <ul><li>#Laravel</li></ul>                |
-| [[Chapter 5. Views\|Chapter 5. Views]]                                                                                       | January 06, 2026 | <ul><li>#Laravel</li></ul>                |
+| [[Chapter 5. Views & Controllers Second Part\|Chapter 5. Views & Controllers Second Part]]                                   | January 06, 2026 | <ul><li>#Laravel</li></ul>                |
 | [[Eloquent in Laravel 12 (ORM)\|Eloquent in Laravel 12 (ORM)]]                                                               | January 06, 2026 | <ul><li>#DataBases</li><li>#ORM</li></ul> |
 
 { .block-language-dataview}
