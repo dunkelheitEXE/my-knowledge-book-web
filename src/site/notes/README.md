@@ -31,6 +31,7 @@ The next are some ways that you can use to navigate through this book
 | ---------------------------------------------- |
 | [[Subjects/Dart & Flutter\|Dart & Flutter]] |
 | [[Subjects/Laravel\|Laravel]]               |
+| [[Subjects/PostgreSQL\|PostgreSQL]]         |
 
 { .block-language-dataview}
 
