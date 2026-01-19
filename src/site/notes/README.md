@@ -27,11 +27,13 @@ The next are some ways that you can use to navigate through this book
 
 ## Books
 
-| File                                           |
-| ---------------------------------------------- |
-| [[Subjects/Dart & Flutter\|Dart & Flutter]] |
-| [[Subjects/Laravel\|Laravel]]               |
-| [[Subjects/PostgreSQL\|PostgreSQL]]         |
+| File                                                     |
+| -------------------------------------------------------- |
+| [[Subjects/🪼Angular\|🪼Angular]]                     |
+| [[Subjects/Dart & Flutter\|Dart & Flutter]]           |
+| [[Subjects/Laravel\|Laravel]]                         |
+| [[Subjects/PostgreSQL\|PostgreSQL]]                   |
+| [[Subjects/Sway Window Manager\|Sway Window Manager]] |
 
 { .block-language-dataview}
 
@@ -43,7 +45,7 @@ The next are some ways that you can use to navigate through this book
 - [[dashboards/Laravel Book\|Laravel Book]]
 - [[dashboards/Dart & Flutter Book\|Dart & Flutter Book]]
 - [[dashboards/Rust Programming Language\|Rust Programming Language]]
-- [[Learning/Code/Angular/Angular\|Angular]]
+- [[Learning/Code/Angular/Angular\|Learning/Code/Angular/Angular]]
 - [[Express\|Express]]
 - [[Learning/Code/Vite\|Vite]]
 - [[NodeJS\|NodeJS]]
