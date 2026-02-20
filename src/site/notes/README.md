@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/readme/","tags":["gardenEntry"]}
 ---
 
-
 # 🔮 dunkelheitEXE Knowledge Book
 
 ### Note from the creator
@@ -23,15 +22,17 @@ The next are some ways that you can use to navigate through this book
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------- |
 | Each note has a property named "Subjects",  you could search a note via *Subjects* | Each note has its own number of tags related with the *Subjects* to see there | Search a note by its own name |
 
-
-
 ## Books
 
 | File                                                     |
 | -------------------------------------------------------- |
+| [[Subjects/🐋 Docker\|🐋 Docker]]                     |
 | [[Subjects/🪼Angular\|🪼Angular]]                     |
+| [[Subjects/🟦 TypeScript\|🟦 TypeScript]]             |
+| [[Subjects/Cibersecurity\|Cibersecurity]]             |
 | [[Subjects/Dart & Flutter\|Dart & Flutter]]           |
 | [[Subjects/Laravel\|Laravel]]                         |
+| [[Subjects/Network\|Network]]                         |
 | [[Subjects/PostgreSQL\|PostgreSQL]]                   |
 | [[Subjects/Sway Window Manager\|Sway Window Manager]] |
 
